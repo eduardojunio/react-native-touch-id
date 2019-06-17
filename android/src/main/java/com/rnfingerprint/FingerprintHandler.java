@@ -40,7 +40,7 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
 
     @Override
     public void onAuthenticationFailed() {
-        mCallback.onError(FingerprintAuthConstants.AUTHENTICATION_FAILED);
+        mCallback.onError("", FingerprintAuthConstants.AUTHENTICATION_FAILED);
     }
 
     @Override
@@ -60,7 +60,7 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
     public interface Callback {
         void onAuthenticated();
 
-        void onError(int errorCode);
+        void onError(String errorString, int errorCode);
 
         void onCancelled();
     }
