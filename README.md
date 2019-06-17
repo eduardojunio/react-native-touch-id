@@ -177,6 +177,7 @@ Returns a `Promise` object.
   - `sensorDescription` - **Android** - text shown next to the fingerprint image
   - `sensorErrorDescription` - **Android** - text shown next to the fingerprint image after failed attempt
   - `cancelText` - **Android** - cancel button text
+  - `notRecognizedText` - **Android** - not recognized text
   - `fallbackLabel` - **iOS** - by default specified 'Show Password' label. If set to empty string label is invisible.
   - `unifiedErrors` - return unified error messages (see below) (default = false)
   - `passcodeFallback` - **iOS** - by default set to false. If set to true, will allow use of keypad passcode.
